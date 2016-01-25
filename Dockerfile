@@ -17,6 +17,7 @@ EXPOSE 8080
 RUN mkdir /opt/www && mkdir /opt/log
 VOLUME /opt/www
 VOLUME /opt/log
+VOLUME /opt/data
 
 # New entrypoint! the server itself, nothing else so we can give it
 # options through CMD (or from compose or similar tool)
